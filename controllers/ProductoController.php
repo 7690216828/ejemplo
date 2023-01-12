@@ -4,7 +4,10 @@ use MVC\Router;
 
 class ProductoController{
     public static function index(Router $router){
-        $router->render('productos/index', []);
+        $saludo = "Hola Mundo";
+        $router->render('productos/index', [
+            "saludo" => $saludo,
+        ]);
     }
 }
 ?>
